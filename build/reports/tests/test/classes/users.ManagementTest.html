@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ManagementTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ManagementTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/users.html">users</a> &gt; ManagementTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">9.338s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testParallel()</td>
+<td class="success">9.338s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>00:01:00.617 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1707022860603
+00:01:00.636 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+00:01:01.752 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - classpath:users/delete/../post/user_post_snippets.feature - call by tag at line 5: Create
+00:01:02.730 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; GET https://reqres.in/api/users?page=1
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:01:02.730 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; GET https://reqres.in/api/users/2
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:01:02.732 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 38
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Superman&quot;,&quot;job&quot;:&quot;Kriptonian&quot;}
+
+00:01:02.732 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 &gt; POST https://reqres.in/api/usrs
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 47
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Batman&quot;,&quot;job&quot;:&quot;Justice League Member&quot;}
+
+00:01:03.653 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 919
+1 &lt; 200
+1 &lt; Date: Sun, 04 Feb 2024 05:01:01 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1706392578&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=naME72nkIQquhnsKfdv1059uxIsXRnEinhwQBEtZWGM%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1706392578&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=naME72nkIQquhnsKfdv1059uxIsXRnEinhwQBEtZWGM%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 2005
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a761c3e8bff-MIA
+{&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+
+00:01:03.655 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 923
+1 &lt; 200
+1 &lt; Date: Sun, 04 Feb 2024 05:01:01 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1706885503&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=G1taVkxecxRjWA4EqUHUGBEw4Rkf%2BAECUfzGhIu%2FyWY%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1706885503&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=G1taVkxecxRjWA4EqUHUGBEw4Rkf%2BAECUfzGhIu%2FyWY%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 2005
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a7618c167b1-MIA
+{&quot;page&quot;:1,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:1,&quot;email&quot;:&quot;george.bluth@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Bluth&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/1-image.jpg&quot;},{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},{&quot;id&quot;:3,&quot;email&quot;:&quot;emma.wong@reqres.in&quot;,&quot;first_name&quot;:&quot;Emma&quot;,&quot;last_name&quot;:&quot;Wong&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/3-image.jpg&quot;},{&quot;id&quot;:4,&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;first_name&quot;:&quot;Eve&quot;,&quot;last_name&quot;:&quot;Holt&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/4-image.jpg&quot;},{&quot;id&quot;:5,&quot;email&quot;:&quot;charles.morris@reqres.in&quot;,&quot;first_name&quot;:&quot;Charles&quot;,&quot;last_name&quot;:&quot;Morris&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/5-image.jpg&quot;},{&quot;id&quot;:6,&quot;email&quot;:&quot;tracey.ramos@reqres.in&quot;,&quot;first_name&quot;:&quot;Tracey&quot;,&quot;last_name&quot;:&quot;Ramos&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/6-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+
+00:01:03.681 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Wonder Woman&quot;,&quot;job&quot;:&quot;Amazona&quot;}
+
+00:01:03.794 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Green Arrow&quot;,&quot;job&quot;:&quot;Billonaire&quot;}
+
+00:01:03.884 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1151
+1 &lt; 201
+1 &lt; Date: Sun, 04 Feb 2024 05:01:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 88
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1707022861&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=hirfG2jp91IzhpZ%2Fg%2FN9uue6Ay%2FrHSMNExUmPVdPg4g%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707022861&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=hirfG2jp91IzhpZ%2Fg%2FN9uue6Ay%2FrHSMNExUmPVdPg4g%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;58-KrG/47XycRrjm/AT3UxvQ/kJ2wA&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a76194e31d7-MIA
+{&quot;name&quot;:&quot;Superman&quot;,&quot;job&quot;:&quot;Kriptonian&quot;,&quot;id&quot;:&quot;804&quot;,&quot;createdAt&quot;:&quot;2024-02-04T05:01:01.961Z&quot;}
+
+00:01:03.892 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1158
+1 &lt; 201
+1 &lt; Date: Sun, 04 Feb 2024 05:01:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 97
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1707022861&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=hirfG2jp91IzhpZ%2Fg%2FN9uue6Ay%2FrHSMNExUmPVdPg4g%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707022861&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=hirfG2jp91IzhpZ%2Fg%2FN9uue6Ay%2FrHSMNExUmPVdPg4g%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;61-lFB6nta0ReAMkhArbJPImFYrW1Q&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a762ca874a2-MIA
+{&quot;name&quot;:&quot;Batman&quot;,&quot;job&quot;:&quot;Justice League Member&quot;,&quot;id&quot;:&quot;759&quot;,&quot;createdAt&quot;:&quot;2024-02-04T05:01:01.970Z&quot;}
+
+00:01:03.908 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 34
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Flash&quot;,&quot;job&quot;:&quot;Scientist&quot;}
+
+00:01:03.933 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 &gt; DELETE https://reqres.in/api/users/759
+2 &gt; Host: reqres.in
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+00:01:04.151 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 470
+1 &lt; 201
+1 &lt; Date: Sun, 04 Feb 2024 05:01:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 88
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;58-AE79Et9dn2di00OD8k6D1DVGTNM&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a77beca2281-MIA
+{&quot;name&quot;:&quot;Wonder Woman&quot;,&quot;job&quot;:&quot;Amazona&quot;,&quot;id&quot;:&quot;18&quot;,&quot;createdAt&quot;:&quot;2024-02-04T05:01:02.222Z&quot;}
+
+00:01:04.222 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 47
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Batman&quot;,&quot;job&quot;:&quot;Justice League Member&quot;}
+
+00:01:04.259 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 463
+1 &lt; 201
+1 &lt; Date: Sun, 04 Feb 2024 05:01:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 91
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;5b-v8ntywcDl6XChVtIt/WqZaluhig&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a786a2623b5-MIA
+{&quot;name&quot;:&quot;Green Arrow&quot;,&quot;job&quot;:&quot;Billonaire&quot;,&quot;id&quot;:&quot;472&quot;,&quot;createdAt&quot;:&quot;2024-02-04T05:01:02.335Z&quot;}
+
+00:01:04.277 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 49
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;@°!|=)(&quot;,&quot;job&quot;:&quot;Justice League Member&quot;}
+
+00:01:04.346 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 437
+1 &lt; 201
+1 &lt; Date: Sun, 04 Feb 2024 05:01:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 83
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;53-n3CXcQqUR3JE7C9Q9XaSIbaDMUY&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a790ab26de3-MIA
+{&quot;name&quot;:&quot;Flash&quot;,&quot;job&quot;:&quot;Scientist&quot;,&quot;id&quot;:&quot;90&quot;,&quot;createdAt&quot;:&quot;2024-02-04T05:01:02.428Z&quot;}
+
+00:01:04.359 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 &gt; PUT https://reqres.in/api/users/2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 37
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Bruce Willis&quot;,&quot;Job&quot;:&quot;Actor&quot;}
+
+00:01:04.386 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 452
+2 &lt; 204
+2 &lt; Date: Sun, 04 Feb 2024 05:01:02 GMT
+2 &lt; Content-Length: 0
+2 &lt; Connection: keep-alive
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 85005a794e5809e6-MIA
+
+
+00:01:04.677 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 452
+1 &lt; 201
+1 &lt; Date: Sun, 04 Feb 2024 05:01:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 97
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;61-D9Or8AZa0vHd3RDPAEu/aSdmbek&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a7b1aadd9f5-MIA
+{&quot;name&quot;:&quot;Batman&quot;,&quot;job&quot;:&quot;Justice League Member&quot;,&quot;id&quot;:&quot;403&quot;,&quot;createdAt&quot;:&quot;2024-02-04T05:01:02.757Z&quot;}
+
+00:01:04.758 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 479
+1 &lt; 201
+1 &lt; Date: Sun, 04 Feb 2024 05:01:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 99
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;63-DfVtK+td82drIt7Y3xkpPCpmwss&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a7b78f967de-MIA
+{&quot;name&quot;:&quot;@°!|=)(&quot;,&quot;job&quot;:&quot;Justice League Member&quot;,&quot;id&quot;:&quot;730&quot;,&quot;createdAt&quot;:&quot;2024-02-04T05:01:02.822Z&quot;}
+
+00:01:04.830 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 470
+1 &lt; 200
+1 &lt; Date: Sun, 04 Feb 2024 05:01:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707022862&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=m%2FGAKc4g%2BD6%2Bs4zpiw8Nbsx41TcevifH7hm02DGoMkQ%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;4c-qg37VqbV0pQH7NnGLqo8/nGseGw&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 85005a7bfc1c4bff-MIA
+{&quot;name&quot;:&quot;Bruce Willis&quot;,&quot;Job&quot;:&quot;Actor&quot;,&quot;updatedAt&quot;:&quot;2024-02-04T05:01:02.909Z&quot;}
+
+---------------------------------------------------------
+feature: classpath:users/delete/user-delete.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2,6539
+---------------------------------------------------------
+
+00:01:05.605 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 1 of 5 (4 remaining) classpath:users/delete/user-delete.feature
+---------------------------------------------------------
+feature: classpath:users/get/user-get.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 3,9632
+---------------------------------------------------------
+
+00:01:05.751 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 2 of 5 (3 remaining) classpath:users/get/user-get.feature
+---------------------------------------------------------
+feature: classpath:users/post/user-post.feature
+scenarios:  6 | passed:  6 | failed:  0 | time: 4,5424
+---------------------------------------------------------
+
+00:01:06.117 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 3 of 5 (2 remaining) classpath:users/post/user-post.feature
+---------------------------------------------------------
+feature: classpath:users/put/user-put.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,4794
+---------------------------------------------------------
+
+00:01:06.199 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 5 of 5 (0 remaining) classpath:users/put/user-put.feature
+Karate version: 1.2.0.RC4
+======================================================
+elapsed:   6,98 | threads:    4 | thread time: 11,64 
+features:     4 | skipped:    1 | efficiency: 0,42
+scenarios:   10 | passed:    10 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.2.0.RC4
+file:///C:/Users/jdsa1/OneDrive/Desktop/KarateFramworkAutomation/Karate_Automation_I/build/karate-reports/karate-summary.html
+===================================================================
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>feb. 04, 2024 12:01:07 A. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\jdsa1\OneDrive\Desktop\KarateFramworkAutomation\Karate_Automation_I\build\karate-reports\users.delete.user-delete.json' contains 1 features
+feb. 04, 2024 12:01:07 A. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\jdsa1\OneDrive\Desktop\KarateFramworkAutomation\Karate_Automation_I\build\karate-reports\users.get.user-get.json' contains 1 features
+feb. 04, 2024 12:01:07 A. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\jdsa1\OneDrive\Desktop\KarateFramworkAutomation\Karate_Automation_I\build\karate-reports\users.post.user-post.json' contains 1 features
+feb. 04, 2024 12:01:07 A. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\jdsa1\OneDrive\Desktop\KarateFramworkAutomation\Karate_Automation_I\build\karate-reports\users.put.user-put.json' contains 1 features
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 4/02/2024, 12:01:08 a. m.</p>
+</div>
+</div>
+</body>
+</html>
